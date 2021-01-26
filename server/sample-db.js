@@ -60,8 +60,8 @@ class SampleDb {
         this.pushProductsToDb()
     }
 
-    cleanDb() {
-        Product.deleteMany({})
+    async cleanDb() {
+       await Product.deleteMany({})
     }
 
     pushProductsToDb() {
